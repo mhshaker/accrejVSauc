@@ -6,7 +6,7 @@ from sklearn.utils import resample
 from sklearn.metrics import log_loss
 
 
-def DF_run(x_train, x_test, y_train, y_test, pram, unc_method, seed, predict=True):
+def RF_run(x_train, x_test, y_train, y_test, pram, unc_method, seed, predict=True):
     np.random.seed(seed)
     us = unc_method.split('_')
     unc_method = us[0]
